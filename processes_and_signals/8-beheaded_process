@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Kills the 7-highlander process using SIGKILL
-kill -9 $(ps auxf | awk '/7-highlander/ && !/awk/ {print $2}')
+kill -9 "$(ps auxf | awk '/7-highlander/ && !/awk/ {print $2}')"
